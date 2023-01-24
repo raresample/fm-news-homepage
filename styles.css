@@ -24,13 +24,21 @@ body {
   color: var(--Dark-grayish-blue);
 }
 
+img {
+  max-width: 100%;
+}
+
 header {
-  margin: 1rem 0;
-  padding: 0 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 1rem 0;
+  padding: 0 1rem;
   max-width: 100%;
+}
+
+nav {
+  display: none;
 }
 
 #navbar-links {
@@ -71,12 +79,16 @@ img {
   background-color: var(--Soft-red);
   color: var(--Off-white);
   padding: 1rem 1.5rem;
-  text-decoration: none;
-  text-transform: uppercase;
   font-size: 0.875rem;
   font-weight: 700;
   letter-spacing: 0.5rem;
   word-spacing: -0.25rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.featured a:hover {
+  background-color: var(--Very-dark-blue);
 }
 
 .featured p {
@@ -97,9 +109,14 @@ h2 {
   margin-top: 0;
 }
 
-h3 {
+h3 a{
   color: var(--Off-white);
+  text-decoration: none;
   font-weight: 800;
+}
+
+.new > article > h3 > a:hover {
+  color: var(--Soft-orange);
 }
 
 hr {
@@ -118,9 +135,13 @@ hr {
   padding: 2rem 0;
 }
 
-.popular h3 {
+.popular h3 a {
   color: var(--Very-dark-blue);
   margin: 0.875rem 0;
+}
+
+.popular h3 a:hover {
+  color: var(--Soft-red);
 }
 
 .popular > article {
@@ -162,3 +183,7 @@ footer a {
   gap: var(--gap, 5rem);
 }
 
+
+.attribution { font-size: 11px; text-align: center; }
+
+.attribution a { color: hsl(228, 45%, 44%); }
