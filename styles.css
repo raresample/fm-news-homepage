@@ -13,10 +13,10 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: 'Inter', sans-serif;
 }
 
 body {
-  font-family: 'Inter', sans-serif;
   font-size: 15px;
   max-width: 375px;
   margin: auto;
@@ -49,7 +49,6 @@ nav li {
 
 main {
   padding: 0 1rem;
-  /* background-color: pink; */
 }
 
 h1 {
@@ -108,8 +107,9 @@ hr {
   height: 1px;
 }
 
-h4 {
+.popular-rank {
   font-size: 2.5rem;
+  font-weight: 700;
   margin: -0.5rem 0;
   color: var(--Grayish-blue);
 }
