@@ -100,16 +100,17 @@ img {
   background-color: var(--Very-dark-blue);
   color: var(--Grayish-blue);
   margin: 2rem 0;
-  padding: 2rem 1.25rem;
+  padding: 1rem 1.25rem;
 }
 
 h2 {
   color: var(--Soft-orange);
   font-size: 2rem;
   margin-top: 0;
+  padding-top: 0.5rem;
 }
 
-h3 a{
+.new article h3 a {
   color: var(--Off-white);
   text-decoration: none;
   font-weight: 800;
@@ -119,9 +120,17 @@ h3 a{
   color: var(--Soft-orange);
 }
 
-hr {
-  border: 1px solid var(--Very-dark-blue);
-  height: 1px;
+.new article {
+  padding: 1.5rem 0;
+}
+
+.new > article:not(:last-of-type) {
+  border-bottom: 1px solid var(--Grayish-blue);
+}
+
+.new article p {
+  padding-top: 1rem;
+  line-height: 1.5rem;
 }
 
 .popular-rank {
@@ -133,6 +142,10 @@ hr {
 
 .popular {
   padding: 2rem 0;
+}
+
+.popular h3 {
+  margin: 0.875rem 0;
 }
 
 .popular h3 a {
