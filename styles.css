@@ -85,6 +85,7 @@ img {
   word-spacing: -0.125rem;
   text-decoration: none;
   text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
 }
 
 .featured a:hover {
@@ -152,6 +153,7 @@ h2 {
 .popular h3 a {
   color: var(--Very-dark-blue);
   margin: 0.875rem 0;
+  text-decoration: none;
 }
 
 .popular h3 a:hover {
@@ -162,17 +164,15 @@ h2 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr;
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
   margin: 1.5rem 0;
   }
 
-.popular-article {
+.popular-post {
   margin-left: 1rem;
   grid-column: span 2;
 }
 
-.popular-article p {
+.popular-post p {
   line-height: 1.5rem;
   margin-top: 0.875rem;
 }
