@@ -44,7 +44,8 @@ header {
 }
 
 #nav-background {
-  background-color: rgba(0,0,0,0.15);
+  /* background-color: rgba(0,0,0,0.15); */
+  background-color: hsl(236, 13%, 42%, 75%);
   position: fixed;
   right: 0;
   bottom: 0;
@@ -53,7 +54,7 @@ header {
 }
 
 nav {
-  transition: transform 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .closed {
@@ -67,7 +68,7 @@ nav ul {
 }
 
 .open {
-  background-color: var(--Soft-orange);
+  background-color: var(--Off-white);
   position: fixed;
   right: 0;
   bottom: 0;
@@ -255,10 +256,35 @@ footer a {
 @media screen and (min-width: 1100px)  {
   
   header {
-    padding: 2rem 1rem;  
+    padding: 3rem 1rem 0;  
   }
 
-  #menu-button button {
+  #nav-background {
+    background-color: var(--Off-white);
+    position: static;
+  }
+  
+  .closed {
+    display: inline;
+  }
+
+  #menu-close {
+    display: none;
+  }
+
+  nav ul {
+    position: static;
+    transform: translateY(0%);
+    display: flex;
+  }
+
+  nav li {
+    font-size: 1rem;
+    color: var(--Dark-grayish-blue);
+    margin-left: 2rem;
+  }
+
+  #menu-button {
     display: none;
   }
 
