@@ -43,6 +43,15 @@ header {
   max-width: 100%;
 }
 
+#nav-background {
+  background-color: rgba(0,0,0,0.15);
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  left: 0;
+}
+
 nav {
   transition: transform 0.3s ease-in-out;
 }
@@ -63,7 +72,7 @@ nav ul {
   right: 0;
   bottom: 0;
   top: 0;
-  width: 75vw;
+  width: 60vw;
   padding: 1.25rem;
 }
 
