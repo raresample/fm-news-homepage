@@ -172,6 +172,7 @@ h2 {
   color: var(--Off-white);
   text-decoration: none;
   font-weight: 800;
+  font-size: 1.25rem;
 }
 
 .new > article > h3 > a:hover {
@@ -325,7 +326,7 @@ footer a {
   }
 
   .featured-excerpt {
-    padding-right: 2rem;
+    padding-right: 1rem;
   }
 
   .new {
@@ -344,7 +345,7 @@ footer a {
   .popular {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    /* max-height: 120px; */
+    gap: 1rem;
   }
 
   .popular h3 {
